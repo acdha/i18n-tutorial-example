@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load url from future %}
+{% load i18n l10n %}
+
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+                <th>{% trans "Title" %}</th>
+                <th>{% trans "Publication Date" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in object_list %}
+                <tr>
+                    <td><a href="{% url "book-detail" slug=book.slug %}">{{ book.title }}</a></td>
+                    <td>{{ book.publication_date|date:"DATE_FORMAT" }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock content %}

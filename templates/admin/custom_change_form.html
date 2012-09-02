@@ -1,0 +1,8 @@
+{% extends "admin/change_form.html" %}
+
+{% load staticfiles %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static "css/admin-tweaks.css" %}" type="text/css">
+{% endblock extrahead %}

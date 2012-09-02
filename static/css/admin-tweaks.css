@@ -1,0 +1,10 @@
+ul.object-tools
+{
+    float: right;
+    height: 5em;
+}
+
+ul.object-tools li
+{
+    float: right;
+}

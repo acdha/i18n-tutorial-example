@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load url from future %}
+{% load i18n l10n %}
+
+{% block content %}
+
+    <h1>{{ object.title }}</h1>
+
+
+    <p class="rating">
+        {% blocktrans with rating=object.average_rating number_of_ratings=object.rating_count %}{{ number_of_ratings }} ratings with an average rating of {{ rating }}{% endblocktrans %}
+    </p>
+
+    <p class="description">
+        {{ object.description }}
+    </p>
+
+    <ul class="reviews">
+        {% for review in lang_reviews %}
+            <li>{{ review.updated|date:"DATE_FORMAT" }}: {{ review.rating }}<br>
+                {{ review.review }}
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

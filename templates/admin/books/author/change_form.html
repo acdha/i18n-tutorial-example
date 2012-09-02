@@ -1,0 +1,13 @@
+{% extends "admin/custom_change_form.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block object-tools %}
+    {{ block.super }}
+    {% if change and object_id %}
+        <ul class="object-tools">
+            <li><a href="{% url "admin:books_book_changelist" %}?authors__id__exact={{ object_id }}">{% trans "Books" %}</a></li>
+        </ul>
+    {% endif %}
+{% endblock object-tools %}

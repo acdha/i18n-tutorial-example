@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-09-03 14:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: i18n_example/settings.py:42
+msgid "English"
+msgstr "Inglés"
+
+#: i18n_example/settings.py:43
+msgid "German"
+msgstr "Aleman"
+
+#: i18n_example/settings.py:44
+msgid "Spanish"
+msgstr ""
+
+#: i18n_example/settings.py:45
+msgid "Portuguese"
+msgstr ""
+
+#: i18n_example/books/models.py:19
+msgid "Author Name"
+msgstr ""
+
+#: i18n_example/books/models.py:22
+msgid "Birth Date"
+msgstr ""
+
+#: i18n_example/books/models.py:36
+msgctxt "Birth Date"
+msgid "Unknown Date"
+msgstr "Fecha de nacimiento"
+
+#: i18n_example/books/models.py:38
+msgctxt "Author Profile"
+msgid "{name} ({birth_date})"
+msgstr ""
+
+#: i18n_example/books/models.py:45
+msgid "Unique identifier for use in URLs"
+msgstr ""
+
+#: i18n_example/books/models.py:63
+msgid "{title} ({publication_date})"
+msgstr ""
+
+#: i18n_example/books/models.py:83
+msgid "Review of {book} by {user}"
+msgstr ""
+
+#: i18n_example/books/templates/books/book_detail.html:12
+#, python-format
+msgid "%(number_of_ratings)s ratings with an average rating of %(rating)s"
+msgstr "%(number_of_ratings)s notas con una calificación promedio de %(rating)s"
+
+#: i18n_example/books/templates/books/book_list.html:10
+msgid "Title"
+msgstr ""
+
+#: i18n_example/books/templates/books/book_list.html:11
+msgid "Publication Date"
+msgstr "Fecha de creación"
+
+#: templates/admin/books/author/change_form.html:10
+msgid "Books"
+msgstr ""
+
+#: templates/admin/books/book/change_form.html:10
+#: templates/admin/books/review/change_form.html:10
+msgid "Authors"
+msgstr ""
+
+#: templates/admin/books/book/change_form.html:11
+#: templates/admin/books/review/change_form.html:11
+msgid "Reviews"
+msgstr ""
